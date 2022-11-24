@@ -1,0 +1,141 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+}
+
+.box{
+    color: beige;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0,0.7);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+fieldset{
+    border: 1px solid dodgerblue;
+}
+legend{
+    border: 1px solid deepskyblue;
+    padding: 10px;
+    text-align: center;
+    background-color: deepskyblue;
+    border-radius: 10px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 2px solid deepskyblue;
+    outline: none;
+    color: beige;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 3px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: deepskyblue;
+}
+#ano-na{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right,rgb(30,144,255), rgb(81, 31, 197));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: beige;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0,191,267), rgb(119,64,265));
+}
+
+/*Navibar*/
+
+nav {
+	width: 100%;
+  background-image: linear-gradient(to right, #38B6FF , #3A3A3A);
+    text-align: center;
+    height:100px;
+}
+nav ul{
+	list-style: none;
+	line-height:45px;
+	color:white;
+	
+}
+nav a{
+	color:rgb(214,214,214);
+	font-size:0.90em;
+	text-decoration:none;
+	
+	transition-timing-function:ease-in-out;
+	transition-duration:0.7s;
+}
+
+nav li a:hover{
+	color:rgb (245,245,245);
+}
+
+nav-link:hover{
+	color:black;
+}
+
+header{
+	background-color: #C0C0C0;
+}
+
+
+/*RESONSIVO NAV*/
+.dis{
+	display: none;
+}
+h5.hcinco{
+	margin-top: 20px; 
+	margin-left: -150px;
+}
+@media (max-width: 1020px){
+	.dis{
+		display: block;
+	}
+	.none{
+		display: none;
+	}
+}
+@media (max-width: 362px){
+	h5.hcinco{
+		margin-top: 20px; 
+	margin-left: -100px;
+}
+}
+
+/*RESPOSIVO SITE*/
+@media screen and (max-width: 1020px) {
+    .box{
+        width: 50%;
+        flex-direction: column;
+        top: 40%;       
+    }
+}
